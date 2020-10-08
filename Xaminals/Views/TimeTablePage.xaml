@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xaminals.Views.TimeTablePage"
+             x:Name="self"
+             Title="TimeTable">
+    <Shell.BackButtonBehavior>
+        <BackButtonBehavior Command="{Binding BackCommand}"
+                            BindingContext="{Binding Source={x:Reference self}, Path=BindingContext}"
+                            IconOverride="back.png" />
+    </Shell.BackButtonBehavior>
+    <ContentPage.Content>
+        <StackLayout>
+            <ScrollView VerticalOptions="FillAndExpand">
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
