@@ -12,10 +12,10 @@ namespace Xaminals.Models
     {
         private int id;
         public int Id { get => id; set => id = value; }
-        private int capacity;
+        private int capacity;//вместимость
         public int Capacity { get => capacity; set => capacity = value; }
         private string type;
-        public string Type { get => type; set => type = value; }
+        public string Type { get => type; set => type = value; }//тип аудитории
 
         public ClassRoom()
         {
