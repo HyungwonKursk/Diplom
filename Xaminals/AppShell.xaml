@@ -149,13 +149,13 @@
                       Style="{StaticResource MonkeysShell}"
                       Title="TimeTable"
                       Icon="study.png"
-                      ContentTemplate="{DataTemplate views:TimeTablePage}" />
+                      ContentTemplate="{DataTemplate views:LessonPage}" />
         <!--ShellContent Route="elephants"
                       Style="{StaticResource ElephantsShell}"
                       Title="Elephants"
                       Icon="elephant.png"
-                      ContentTemplate="{DataTemplate views:ElephantsPage}" /-->
-        <!--ShellContent Route="bears"
+                      ContentTemplate="{DataTemplate views:ElephantsPage}" />
+        <ShellContent Route="bears"
                       Style="{StaticResource BearsShell}"
                       Title="Bears"
                       Icon="bear.png"

@@ -16,10 +16,15 @@
   <ItemGroup>
     <Folder Include="ViewModels\" />
     <Folder Include="Controls\" />
-    <Folder Include="Data\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Update="Views\AutorizationPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\LessonDetailPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\LessonPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\TimeTablePage.xaml">

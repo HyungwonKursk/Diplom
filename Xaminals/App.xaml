@@ -15,9 +15,8 @@
                     <ColumnDefinition Width="Auto" />
                     <ColumnDefinition Width="Auto" />
                 </Grid.ColumnDefinitions>
-                <Image Grid.RowSpan="2" 
-                       Source="{Binding ImageUrl}" 
-                       Aspect="AspectFill"
+                <Label Grid.RowSpan="2" 
+                       Text="{Binding ImageUrl}" 
                        HeightRequest="60" 
                        WidthRequest="60" />
                 <Label Grid.Column="1" 
