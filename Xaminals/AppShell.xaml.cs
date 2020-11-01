@@ -33,6 +33,7 @@ namespace Xaminals
             routes.Add("catdetails", typeof(CatDetailPage));
             routes.Add("dogdetails", typeof(DogDetailPage));
             routes.Add("elephantdetails", typeof(ElephantDetailPage));
+            routes.Add("lessondetails", typeof(LessonDetailPage));
 
             foreach (var item in routes)
             {
@@ -61,6 +62,9 @@ namespace Xaminals
                     break;
                 case "elephantdetails":
                     animalName = ElephantData.Elephants.ElementAt(rand.Next(0, ElephantData.Elephants.Count)).Name;
+                    break;
+                case "lessondetails":
+                    animalName = LessonData.Lessons.ElementAt(rand.Next(0, LessonData.Lessons.Count)).Name;
                     break;
             }
 

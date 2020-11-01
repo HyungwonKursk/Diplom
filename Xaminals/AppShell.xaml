@@ -145,10 +145,20 @@
         this code is valid and does build.
                
         -->
+        <ShellContent Route="Autorization"
+                      Style="{StaticResource BearsShell}"
+                      Title="Авторизация"
+                      Icon="Autoriz.png"
+                      ContentTemplate="{DataTemplate views:AutorizationPage}" />
         <ShellContent Route="TimeTable"
-                      Style="{StaticResource MonkeysShell}"
+                      Style="{StaticResource AboutShell}"
                       Title="TimeTable"
                       Icon="study.png"
+                      ContentTemplate="{DataTemplate views:LessonPage}" />
+        <ShellContent Route="Settings"
+                      Style="{StaticResource MonkeysShell}"
+                      Title="Settings"
+                      Icon="customize.png"
                       ContentTemplate="{DataTemplate views:LessonPage}" />
         <!--ShellContent Route="elephants"
                       Style="{StaticResource ElephantsShell}"
@@ -160,11 +170,7 @@
                       Title="Bears"
                       Icon="bear.png"
                       ContentTemplate="{DataTemplate views:BearsPage}" /-->
-        <ShellContent Route="Autorization"
-                      Style="{StaticResource BearsShell}"
-                      Title="Авторизация"
-                      Icon="Autoriz.png"
-                      ContentTemplate="{DataTemplate views:AutorizationPage}" />
+        
     </FlyoutItem>
 
     <ShellContent Route="about"
@@ -172,10 +178,6 @@
                   Title="About"
                   Icon="info.png"
                   ContentTemplate="{DataTemplate views:AboutPage}" />
-
-    <MenuItem Text="Random"
-              IconImageSource="random.png"
-              Command="{Binding RandomPageCommand}" />
     <MenuItem Text="Help"
               IconImageSource="help.png"
               Command="{Binding HelpCommand}"

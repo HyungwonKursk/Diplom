@@ -22,35 +22,35 @@ namespace Xaminals.Data
             });
             Lessons.Add(new Animal
             {
-                Name = "Вычислительная математика",
+                Name = "Программирование на С#",
                 Location = "Селиванова Ирина Вастльевна",
                 Details = "Математика",
                 ImageUrl = "14:15"
             });
             Lessons.Add(new Animal
             {
-                Name = "Вычислительная математика",
+                Name = "dfghjkl",
                 Location = "Селиванова Ирина Вастльевна",
                 Details = "Математика",
                 ImageUrl = "14:15"
             });
             Lessons.Add(new Animal
             {
-                Name = "Вычислительная математика",
+                Name = "sdfrgthyju",
                 Location = "Селиванова Ирина Вастльевна",
                 Details = "Математика",
                 ImageUrl = "14:15"
             });
             Lessons.Add(new Animal
             {
-                Name = "Вычислительная математика",
+                Name = "wedrthbvcx",
                 Location = "Селиванова Ирина Вастльевна",
                 Details = "Математика",
                 ImageUrl = "14:15"
             });
             Lessons.Add(new Animal
             {
-                Name = "Вычислительная математика",
+                Name = "sdfghjkmnbv",
                 Location = "Селиванова Ирина Вастльевна",
                 Details = "Математика",
                 ImageUrl = "14:15"
