@@ -11,11 +11,12 @@
             <Label Text="{Binding Location}" 
                    FontAttributes="Italic" 
                    HorizontalOptions="Center" />
+            <Label Text="{Binding Details}" 
+                   FontAttributes="Italic" 
+                   HorizontalOptions="Center" />
             <Label Text="{Binding ImageUrl}" 
                    FontAttributes="Italic" 
                    HorizontalOptions="Center"  />
-            <Label Text="{Binding Details}" 
-                   Style="{DynamicResource BodyStyle}" />
         </StackLayout>
     </ScrollView>
 </ContentPage>
