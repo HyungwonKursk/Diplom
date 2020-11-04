@@ -159,7 +159,7 @@
                       Style="{StaticResource MonkeysShell}"
                       Title="Settings"
                       Icon="customize.png"
-                      ContentTemplate="{DataTemplate views:LessonPage}" />
+                      ContentTemplate="{DataTemplate views:SettingsPage}" />
         <!--ShellContent Route="elephants"
                       Style="{StaticResource ElephantsShell}"
                       Title="Elephants"

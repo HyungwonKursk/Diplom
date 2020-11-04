@@ -22,7 +22,7 @@ namespace Xaminals.Data
             });
             Lessons.Add(new Animal
             {
-                Name = "Программирование",
+                Name = "Программирование #",
                 Location = "Селиванова Ирина Васильевна",
                 Details = "Лекция",
                 ImageUrl = "14:15"
