@@ -27,6 +27,8 @@ namespace Xaminals.Views
                 HorizontalOptions = LayoutOptions.Center,
                 VerticalOptions = LayoutOptions.CenterAndExpand
             };
+            
+            
         }
         
         Button Btn;
@@ -40,13 +42,14 @@ namespace Xaminals.Views
             header.Text = "Вы выбрали: " + picker.Items[picker.SelectedIndex];
             if (picker.Items[picker.SelectedIndex] == "Поиск преподавателя по ФИО")
             {
-                TeacherEntry.Placeholder = "ФИО преподавателя";
+                Navigation.PushAsync(new FindTeacherPage());
             }
             if (picker.Items[picker.SelectedIndex] == "Поиск свободной аудитории по времени")
             {
-                TeacherEntry.Placeholder = "Время занятия";
+                Navigation.PushAsync(new FindClassPage());
             }
             stackLayout.Children.Add(Btn);
+
 
             this.Content = stackLayout;
         }
