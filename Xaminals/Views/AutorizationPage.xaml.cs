@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Xaminals.Models;
 
 namespace Xaminals.Views
 {
@@ -90,6 +91,7 @@ namespace Xaminals.Views
 
         private void LoginBtn_Clicked(object sender, EventArgs e)
         {
+           
             Navigation.PushAsync(new RegistrationPage());
         }
 
