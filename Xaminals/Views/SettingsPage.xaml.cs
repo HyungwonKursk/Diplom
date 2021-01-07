@@ -36,7 +36,7 @@ namespace Xaminals.Views
         {
            
             
-            stackLayout.Children.Add(TeacherEntry);
+            //stackLayout.Children.Add(TeacherEntry);
             //TeacherEntry.TextChanged += loginEntry_TextChanged; обработчик события. потом понадобится
 
             header.Text = "Вы выбрали: " + picker.Items[picker.SelectedIndex];
@@ -48,10 +48,10 @@ namespace Xaminals.Views
             {
                 Navigation.PushAsync(new FindClassPage());
             }
-            stackLayout.Children.Add(Btn);
+            //stackLayout.Children.Add(Btn);
 
 
-            this.Content = stackLayout;
+            //this.Content = stackLayout;
         }
 
         /*private void loginEntry_TextChanged(object sender, TextChangedEventArgs e)

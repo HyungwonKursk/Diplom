@@ -65,7 +65,7 @@
     <FlyoutItem Route="animals"
                 Title="Animals"
                 FlyoutDisplayOptions="AsMultipleItems">
-        <Tab Title="Domestic"
+        <!--" Tab Title="Domestic"
              Route="domestic"
              Icon="paw.png">
             <ShellContent Route="cats"
@@ -78,8 +78,9 @@
                           Title="Dogs"
                           Icon="dog.png"
                           ContentTemplate="{DataTemplate views:DogsPage}" />
-        </Tab>
-
+        </>
+        -->
+        
         <!--
 
         Shell has implicit conversion operators that enable the Shell visual hierarchy to be simplified.
@@ -95,16 +96,16 @@
                       Style="{StaticResource BearsShell}"
                       Title="Авторизация"
                       Icon="Autoriz.png"
-                      ContentTemplate="{DataTemplate views:AutorizationPage}" />
+                      ContentTemplate="{DataTemplate views:UserPage}" />
         <ShellContent Route="TimeTable"
                       Style="{StaticResource AboutShell}"
-                      Title="TimeTable"
+                      Title="Расписание"
                       Icon="study.png"
                       ContentTemplate="{DataTemplate views:LessonPage}" />
         <ShellContent Route="Settings"
                       Style="{StaticResource MonkeysShell}"
-                      Title="Settings"
-                      Icon="customize.png"
+                      Title="Поиск"
+                      Icon="search.png"
                       ContentTemplate="{DataTemplate views:SettingsPage}" />
     </FlyoutItem>
 

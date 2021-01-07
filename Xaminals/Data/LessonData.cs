@@ -15,39 +15,31 @@ namespace Xaminals.Data
 
             Lessons.Add(new Animal
             {
-                Name = "Вычислительная математика",
-                Location = "Селиванова Ирина Васильевна",
-                Details = "Практика",
-                ImageUrl = "14:15"
+                Name = "Понедельник",
+                
             });
             Lessons.Add(new Animal
             {
-                Name = "Программирование #",
+                Name = "Функциональное программирование",
                 Location = "Селиванова Ирина Васильевна",
                 Details = "Лекция",
-                ImageUrl = "14:15"
+                ImageUrl = "8:00"
             });
             Lessons.Add(new Animal
             {
-                Name = "sdfrgthyju",
-                Location = "Селиванова Ирина Вастльевна",
-                Details = "Семинар",
-                ImageUrl = "14:15"
+                Name = "Верификация программного обеспечения",
+                Location = "Макаров Константин Сергеевич",
+                Details = "Практика",
+                ImageUrl = "9:40"
             });
             Lessons.Add(new Animal
             {
-                Name = "wedrthbvcx",
-                Location = "Селиванова Ирина Вастльевна",
-                Details = "Математика",
-                ImageUrl = "14:15"
+                Name = "Верификация программного обеспечения",
+                Location = "Макаров Константин Сергеевич",
+                Details = "Лекция",
+                ImageUrl = "11:20"
             });
-            Lessons.Add(new Animal
-            {
-                Name = "sdfghjkmnbv",
-                Location = "Селиванова Ирина Вастльевна",
-                Details = "Математика",
-                ImageUrl = "14:15"
-            });
+            
         }
     }
 }
