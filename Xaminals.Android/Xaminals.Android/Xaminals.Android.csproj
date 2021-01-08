@@ -99,10 +99,15 @@
     <Folder Include="Resources\drawable-xxxhdpi\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Xaminals\Xaminals.csproj">
+    <ProjectReference Include="..\..\Xaminals\Xaminals.csproj">
       <Project>{CD4DE9E8-2721-47F3-BA95-999B6F75FF27}</Project>
       <Name>Xaminals</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties TriggeredFromHotReload="False" />
+    </VisualStudio>
+  </ProjectExtensions>
 </Project>
