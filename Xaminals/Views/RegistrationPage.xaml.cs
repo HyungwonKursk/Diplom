@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Xaminals.Models;
+using Xaminals.Data;
 
 namespace Xaminals.Views
 {
@@ -165,8 +166,33 @@ namespace Xaminals.Views
         }
 
    
-        private async void RegisBtn_Clicked(object sender, EventArgs e)
-        {/*
+        private void RegisBtn_Clicked(object sender, EventArgs e)
+        {
+            if (LoginBox.Text == "" || PasswBox.Text == "" || PasswCheckBox.Text == "" ||
+                TypePick.Items[TypePick.SelectedIndex] == "" || NameBox.Text == "")
+            {
+                DependencyService.Get<IToast>().Show("Не все поля заполнены");
+                return;
+            }
+            if (PasswBox.Text != PasswCheckBox.Text)
+            {
+                DependencyService.Get<IToast>().Show("Пароли не совпадают");
+                return;
+            }
+
+            if (TypePick.Items[TypePick.SelectedIndex] == "Преподаватель")
+            {
+                var user = new Teacher(NameBox.Text, PasswBox.Text, LoginBox.Text, DepartBox.Text);
+                if (TeacherData.CheckLogin(user) )
+                    DependencyService.Get<IToast>().Show("Успешно");
+                else
+                    DependencyService.Get<IToast>().Show("Логин уже занят");
+
+            }
+            
+            
+
+            /*
             if (RegisrationPage.LoginBox.Text=="")
                 DependencyService.Get<IToast>().Show("Не все поля заполнены");
             bool connect = await WebConnection.CheckConnection();

@@ -4,32 +4,32 @@ using System.Text;
 
 namespace Xaminals.Models
 {
-    /// <summary>
-    /// Преподаватель
-    /// </summary>
-    public class Teacher
+    public class Student
     {
+        public static Student CurrentUser { get;  set; } // текущий пользователь системы (singleton)
         //public int Id { get; set; }
         public string Login { get; set; }
         public string Fio { get; set; }
         public string Password { get; set; }
-        public string Department { get; set; }
+        public bool Type { get; set; }
+        public int Group { get; set; }
 
-        public Teacher( string _fio, string _password,string _login,string _department)
+        public Student(string _fio, string _password, string _login, int _group)
         {
             Fio = _fio;
             Password = _password;
             Login = _login;
-            Department = _department;
+            Type = false;
+            Group = _group;
 
         }
-        public Teacher()
+        public Student()
         {
             Fio = "";
             Password = "";
+            Type = false;
             Login = "";
-            Department = "";
+            Group = 0;
         }
-
     }
 }

@@ -96,7 +96,7 @@
                       Style="{StaticResource BearsShell}"
                       Title="Авторизация"
                       Icon="Autoriz.png"
-                      ContentTemplate="{DataTemplate views:UserPage}" />
+                      ContentTemplate="{DataTemplate views:RegistrationPage}" />
         <ShellContent Route="TimeTable"
                       Style="{StaticResource AboutShell}"
                       Title="Расписание"
